@@ -38,6 +38,7 @@ app.delete('/api/items/:id', async (req, res) => {
     res.json({ message: 'Item dihapus' });
 });
 
-app.listen(4000, () => {
-    console.log('Server berjalan di port 4000');
-}); 
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+    console.log('Sserver jalan di port' + PORT);
+});
