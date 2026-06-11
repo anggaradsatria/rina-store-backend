@@ -40,5 +40,5 @@ app.delete('/api/items/:id', async (req, res) => {
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
-    console.log('Sserver jalan di port' + PORT);
+    console.log('Server jalan di port' + PORT);
 });
